@@ -7,8 +7,9 @@ import ApiKeyPage from './pages/ApiKey.jsx'
 import ExportJobPage from './pages/ExportJob.jsx'
 import UserPreferencePage from './pages/UserPreference.jsx'
 import CalculationCachePage from './pages/CalculationCache.jsx'
-import CalculationErrorPage from './pages/CalculationError.jsx'
-import CalculationHistoryPage from './pages/CalculationHistory.jsx'
+import ApplicationSettingsPage from './pages/ApplicationSettings.jsx'
+import UserFeedbackPage from './pages/UserFeedback.jsx'
+import PerformanceScalabilityReportPage from './pages/PerformanceScalabilityReport.jsx'
 
 export default function App() {
   return (
@@ -22,8 +23,9 @@ export default function App() {
           <Route path="/exportjob" element={<ExportJobPage />} />
           <Route path="/userpreference" element={<UserPreferencePage />} />
           <Route path="/calculationcache" element={<CalculationCachePage />} />
-          <Route path="/calculationerror" element={<CalculationErrorPage />} />
-          <Route path="/calculationhistory" element={<CalculationHistoryPage />} />
+          <Route path="/settings" element={<ApplicationSettingsPage />} />
+          <Route path="/feedback" element={<UserFeedbackPage />} />
+          <Route path="/reports/performance" element={<PerformanceScalabilityReportPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
